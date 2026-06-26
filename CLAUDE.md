@@ -58,3 +58,4 @@ make install
 |--------|---------|
 | `setup-repos.sh` | Add Webmin apt/yum repository (Debian/RHEL) |
 | `upgrade.sh` | Upgrade Debian bookworm → trixie (destructive, reboots) |
+
