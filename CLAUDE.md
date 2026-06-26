@@ -52,6 +52,16 @@ make install
 
 `par2cmdline-turbo` is a performance-focused fork that replaces GF16/MD5/CRC32 computation with ParPar's backend and uses C++11 threads instead of OpenMP.
 
+## Kernel Tweaks
+
+Tuned for SABnzbd in `/etc/sysctl.d/99-sabnzbd.conf` (applied at boot, live immediately via `sysctl -p`):
+
+| Parameter | Value | Reason |
+|-----------|-------|--------|
+| `vm.swappiness` | 10 | Avoid swapping on 1.9GB RAM system |
+| `net.core.rmem_max/wmem_max` | 16MB | Larger socket buffers for download throughput |
+| `net.ipv4.tcp_slow_start_after_idle` | 0 | Don't restart TCP slow-start between NZB downloads |
+
 ## Admin Scripts (`/home/david/`)
 
 | Script | Purpose |
