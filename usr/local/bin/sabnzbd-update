@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+cd /opt/sabnzbd
+git pull
+/opt/sabnzbd-venv/bin/pip install -q -r requirements.txt -U
+systemctl restart sabnzbd@david
+systemctl status sabnzbd@david --no-pager
