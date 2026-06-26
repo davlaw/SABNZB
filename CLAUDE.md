@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+**GitHub:** github.com/davlaw/SABNZB
+
 ## System Overview
 
 This is a Debian Linux server (Trixie) running several self-hosted services. The working directory is the root filesystem `/`.
