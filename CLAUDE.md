@@ -49,6 +49,7 @@ systemctl restart sabnzbd@david
 - **Collects:** host metrics (CPU, disk, filesystem, memory, network, paging, processes) and logs from `/var/log/**log`
 - **Ships to:** OpenObserve instance at `http://192.168.5.43:5080/api/default/`
 - **Re-install/reconfigure:** run `/home/david/install.sh <URL> <Auth_Key>` as root
+- **`memory_ballast`:** set to 128MB in config (tuned for 1.9GB RAM — `install.sh` defaults to 512MB which is too large)
 
 ## Building par2cmdline
 
