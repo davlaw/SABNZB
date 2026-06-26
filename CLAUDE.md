@@ -37,6 +37,7 @@ systemctl restart sabnzbd@david
 - **Run in background:** `python3 -OO /opt/sabnzbd/SABnzbd.py -d -f ~/.sabnzbd/sabnzbd.ini`
 - **Python venv:** `/opt/sabnzbd-venv/` (required — system Python conflicts with Debian-managed packages)
 - **Install/update dependencies:** `/opt/sabnzbd-venv/bin/pip install -r /opt/sabnzbd/requirements.txt -U`
+- **Update SABnzbd:** `sabnzbd-update` (pulls, updates deps, restarts service)
 
 ## OpenTelemetry Collector
 
